@@ -2,6 +2,7 @@ import { useDiscogsContext } from "@/app/context/DiscogsContext";
 
 import ComponentHeader from "../../Header/ComponentHeader";
 import Paragraph from "../../Paragraph/Paragraph";
+import Link from "next/link";
 
 export default function AlbumInfo() {
   const { discogs } = useDiscogsContext();
@@ -38,6 +39,25 @@ export default function AlbumInfo() {
         </p>
         <p>Composer: {discogs?.musicComposer}</p>
         <p>Lyrics: {discogs?.lyricist}</p>
+      </div>
+
+      {/* Album Platforms */}
+      <div>
+        <div>
+          <Link href={discogs!.listeningPlatform.spotify} target="_blank">
+            Spotify
+          </Link>
+        </div>
+        <div>
+          <Link href={discogs!.listeningPlatform.appleMusic} target="_blank">
+            Apple Music
+          </Link>
+        </div>
+        <div>
+          <Link href={discogs!.listeningPlatform.deezer} target="_blank">
+            Deezer
+          </Link>
+        </div>
       </div>
 
       {/* Album Tracklist */}

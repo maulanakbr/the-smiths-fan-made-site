@@ -22,7 +22,7 @@ export type ContextProps<T> = {
 export type ButtonProps<T> = {
   buttonAttributes?: string;
   children: ReactNode;
-  handleFunction: () => MouseEventHandler<T>;
+  handleFunction?: () => MouseEventHandler<T>;
 };
 
 export type ParagraphProps<T = Artist> = {

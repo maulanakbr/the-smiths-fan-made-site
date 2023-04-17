@@ -26,7 +26,7 @@ export default function History({ artist }: ContextProps<Artist>) {
         <ComponentHeader>
           <h2>HISTORY</h2>
         </ComponentHeader>
-        <Paragraph dataToShow={artist!.history} />
+        <Paragraph dataToShow={artist!.history.historyContent} />
         <ButtonElement handleFunction={handleClickButton}>
           Read More
         </ButtonElement>

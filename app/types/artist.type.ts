@@ -8,6 +8,11 @@ export type ArtistMembersProps = {
   personImage: string;
 };
 
+export type HistoryProps = {
+  historyContent: string;
+  historySource: string;
+};
+
 export type ImageSourceProps = {
   hasColor: boolean;
   url: string[];
