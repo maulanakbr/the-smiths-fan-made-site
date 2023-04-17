@@ -1,0 +1,16 @@
+@use "../abstracts" as *;
+
+body {
+  font-family: $ff-roboto;
+  font-weight: fw(light);
+  font-size: fs(s);
+  color: clr(neutral-white, 300);
+  background-color: clr(neutral-black, 300);
+}
+
+@at-root {
+  :root {
+    --swiper-pagination-color: #f7f7f7;
+    --swiper-pagination-top: 16.5rem !important;
+  }
+}

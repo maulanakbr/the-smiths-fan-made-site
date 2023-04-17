@@ -1,0 +1,10 @@
+@use "../abstracts/" as *;
+
+.main-container {
+  @include flex-container($align: flex-start);
+  max-width: 18em;
+  min-height: 100vh;
+  margin: auto;
+  aspect-ratio: auto;
+  white-space: normal;
+}
