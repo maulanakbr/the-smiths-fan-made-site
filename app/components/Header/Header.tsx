@@ -5,13 +5,13 @@ import { useState, MouseEventHandler } from "react";
 
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
+import navigationMenu from "@/app/utils/navigationMenu";
+
 import type { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
 
 export default function Header() {
   const [toggle, setToggle] = useState<boolean>(false);
   const router: AppRouterInstance = useRouter();
-
-  const homeItems: string[] = ["Home", "History", "Discography"];
 
   const handleClickNavigation = (
     item: string
@@ -38,7 +38,7 @@ export default function Header() {
       {/* Clicked Menu */}
       {toggle === true ? (
         <ul role="list">
-          {homeItems.map((item, index) => (
+          {navigationMenu.map((item, index) => (
             <li key={index} onClick={() => handleClickNavigation(item)}>
               {item}
             </li>

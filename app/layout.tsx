@@ -1,7 +1,9 @@
 import MainContainer from "./components/Layout/MainContainer";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 import "../app/styles/global.scss";
+
 import type { ChildrenProps } from "./types";
 import type { Metadata } from "next";
 
@@ -17,6 +19,7 @@ export default function RootLayout({ children }: ChildrenProps) {
         <MainContainer>
           <Header />
           {children}
+          <Footer />
         </MainContainer>
       </body>
     </html>
