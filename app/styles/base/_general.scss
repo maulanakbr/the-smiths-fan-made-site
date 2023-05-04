@@ -8,6 +8,28 @@ body {
   background-color: clr(neutral-black, 300);
 }
 
+h1 {
+  font-size: fs(4xl);
+  font-weight: fw(medium);
+}
+
+h2 {
+  font-size: fs(2xl);
+  font-weight: fw(regular);
+}
+
+h3 {
+  font-size: fs(xl);
+  font-weight: fw(bold);
+  letter-spacing: 0.5rem;
+}
+
+h4 {
+  font-size: fs(m);
+  font-weight: fw(regular);
+  letter-spacing: 0.2rem;
+}
+
 @at-root {
   :root {
     --swiper-pagination-color: #f7f7f7;

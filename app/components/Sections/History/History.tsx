@@ -4,7 +4,7 @@ import ArtistContext from "@/app/context/ArtistContext";
 import Container from "../../Layout/Container";
 import ComponentHeader from "../../Header/ComponentHeader";
 import Paragraph from "../../Paragraph/Paragraph";
-import ButtonElement from "../../Button/ButtonElement";
+import NavigationElement from "../../Navigation/NavigationElement";
 
 import type { Artist, ContextProps } from "@/app/types";
 import type { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
@@ -23,13 +23,13 @@ export default function History({ artist }: ContextProps<Artist>) {
   return (
     <ArtistContext.Provider value={{ artist }}>
       <Container>
-        <ComponentHeader>
-          <h2>HISTORY</h2>
-        </ComponentHeader>
+        <ComponentHeader type="H3" headerText="History" />
         <Paragraph dataToShow={artist!.history.historyContent} />
-        <ButtonElement handleFunction={handleClickButton}>
-          Read More
-        </ButtonElement>
+        <NavigationElement
+          navigationType="BUTTON"
+          navigationText="Read More"
+          handleFunction={handleClickButton}
+        />
       </Container>
     </ArtistContext.Provider>
   );

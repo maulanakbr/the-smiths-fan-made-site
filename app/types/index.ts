@@ -7,7 +7,8 @@ import type {
   FetcherProps,
   FetchResponseProps,
   ContextProps,
-  ButtonProps,
+  NavigationProps,
+  ComponentHeaderProps,
   ParagraphProps,
   SomeContentProps,
 } from "./app.type";
@@ -20,7 +21,8 @@ export type {
   FetcherProps,
   FetchResponseProps,
   ContextProps,
-  ButtonProps,
+  NavigationProps,
+  ComponentHeaderProps,
   ParagraphProps,
   SomeContentProps,
 };

@@ -6,13 +6,16 @@ export default function Paragraph({
   dataToShow,
   isTruncated = true,
 }: ParagraphProps) {
-  const paragraph: string = isTruncated
-    ? truncate(dataToShow, 300)
-    : dataToShow;
+  const paragraphToShow: string =
+    isTruncated && typeof dataToShow === "string"
+      ? truncate(dataToShow, 300)
+      : typeof dataToShow === "object"
+      ? dataToShow[0].toString()
+      : dataToShow;
 
   return (
     <>
-      <p>{paragraph}</p>
+      <p className="paragraph-content">{paragraphToShow}</p>
     </>
   );
 }

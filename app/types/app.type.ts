@@ -1,9 +1,10 @@
-import { HTMLAttributes, MouseEventHandler, ReactNode } from "react";
-import Artist from "./artist.interface";
+import type Artist from "./artist.interface";
+import type { Url } from "next/dist/shared/lib/router/router";
+import type { MouseEventHandler, ReactNode } from "react";
 
 export type ChildrenProps = {
   children: ReactNode;
-  attributes?: HTMLAttributes<HTMLElement>;
+  someClassName?: string;
 };
 
 export type FetcherProps = <TData>(url: string) => Promise<TData>;
@@ -19,14 +20,36 @@ export type ContextProps<T> = {
   discogs?: T | undefined;
 };
 
-export type ButtonProps<T> = {
-  buttonAttributes?: string;
-  children: ReactNode;
+enum NavigationEnum {
+  BUTTON,
+  LINK,
+}
+
+export type NavigationProps<T> = {
+  navigationType: keyof typeof NavigationEnum;
+  navigationClass?: string;
+  navigationLink?: Url;
+  navigationText: string;
   handleFunction?: () => MouseEventHandler<T>;
 };
 
+enum ComponentHeaderEnum {
+  H1,
+  H1_SUB,
+  H2,
+  H3,
+  H4,
+}
+
+export type ComponentHeaderProps = {
+  type: keyof typeof ComponentHeaderEnum;
+  headerText: string;
+  subText?: string;
+  headerClass?: string;
+};
+
 export type ParagraphProps<T = Artist> = {
-  dataToShow: T extends Artist ? string : null;
+  dataToShow: T extends Artist ? string | string[] : null;
   isTruncated?: boolean;
 };
 

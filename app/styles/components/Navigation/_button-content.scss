@@ -1,0 +1,12 @@
+@use "../../abstracts/" as *;
+
+.button-content {
+  width: 8rem;
+  height: 2.7em;
+  font-size: fs(xs);
+  background-color: clr(component-colors, 100);
+
+  &:hover {
+    background-color: clr(component-colors, 200);
+  }
+}

@@ -8,7 +8,7 @@
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
-  font-size: fs(4xl);
+  font-size: fs(xl);
   font-weight: fw(medium);
   z-index: 30;
 
@@ -17,17 +17,17 @@
   }
 
   ul {
-    @include flex-container($content: center);
+    @include flex-container($content: center, $gap: 0.2rem);
     position: absolute;
     width: 100%;
-    min-height: 13em;
+    min-height: 18em;
     top: 0;
     flex-direction: column;
     padding: 1rem;
     background-color: clr(neutral-black, 300);
 
     & li {
-      height: 4rem;
+      height: 3.5rem;
       width: 100%;
     }
   }

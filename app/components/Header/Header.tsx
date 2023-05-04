@@ -3,9 +3,8 @@
 import { useRouter } from "next/navigation";
 import { useState, MouseEventHandler } from "react";
 
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-
 import navigationMenu from "@/app/utils/navigationMenu";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 
 import type { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
 

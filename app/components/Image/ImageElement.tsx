@@ -11,6 +11,7 @@ export default function ImageElement({
   return (
     <>
       <Image
+        className="image-content"
         src={imageSrc}
         alt={imageAlt}
         width={imageWidth}
