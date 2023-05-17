@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import "../app/styles/global.scss";
+import "swiper/swiper-bundle.css";
 
 import type { ChildrenProps } from "./types";
 import type { Metadata } from "next";

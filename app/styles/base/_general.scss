@@ -32,7 +32,11 @@ h4 {
 
 @at-root {
   :root {
-    --swiper-pagination-color: #f7f7f7;
+    --swiper-navigation-size: 40px;
+    --swiper-navigation-sides-offset: 10px;
+    --swiper-navigation-top-offset: 50%;
+    --swiper-navigation-color: #{clr(component-colors, 100)};
+    --swiper-pagination-color: #{clr(component-colors, 200)};
     --swiper-pagination-top: 16.5rem !important;
   }
 }

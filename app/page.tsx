@@ -5,7 +5,7 @@ import { useFetch } from "./hooks/useFetch";
 import Hero from "./components/Sections/Hero/Hero";
 import History from "./components/Sections/History/History";
 import Article from "./components/Sections/Article/Article";
-import Swiper from "./components/Sections/Swiper/Swiper";
+import MainSwiper from "./components/Sections/Swiper/MainSwiper";
 
 import type { Artist } from "./types";
 
@@ -22,7 +22,7 @@ export default function Home() {
       <Hero artist={returnedData} />
       <History artist={returnedData} />
       <Article artist={returnedData} />
-      <Swiper artist={returnedData} />
+      <MainSwiper artist={returnedData} />
     </>
   );
 }

@@ -1,8 +1,6 @@
 import { useArtistContext } from "@/app/context/ArtistContext";
 
 import NavigationElement from "../../Navigation/NavigationElement";
-import Link from "next/link";
-import ImageElement from "../../Image/ImageElement";
 
 import type { SomeContentProps } from "@/app/types";
 
@@ -15,12 +13,6 @@ export default function SwiperItem({ pickedIndex }: SomeContentProps) {
 
   return (
     <>
-      {/* <Link href={`/albums/${swiperPath}`}>
-        <ImageElement
-          imageSrc={swiperData!.artwork}
-          imageAlt={swiperData!.albumId}
-        />
-      </Link> */}
       <NavigationElement
         navigationType="IMAGE"
         navigationClass="discogs-navigation"
