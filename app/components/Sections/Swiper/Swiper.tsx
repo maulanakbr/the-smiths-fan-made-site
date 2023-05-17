@@ -10,9 +10,7 @@ export default function Swiper({ artist }: ContextProps<Artist>) {
   return (
     <ArtistContext.Provider value={{ artist }}>
       <Container>
-        <ComponentHeader>
-          <h2>DISCOGRAPHY</h2>
-        </ComponentHeader>
+        <ComponentHeader type="H3" headerText="Discography" />
         {artist?.discogs.map((item, index) => (
           <SwiperItem key={item.albumId} pickedIndex={index} />
         ))}

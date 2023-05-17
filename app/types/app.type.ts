@@ -23,13 +23,16 @@ export type ContextProps<T> = {
 enum NavigationEnum {
   BUTTON,
   LINK,
+  IMAGE,
 }
 
 export type NavigationProps<T> = {
   navigationType: keyof typeof NavigationEnum;
   navigationClass?: string;
   navigationLink?: Url;
-  navigationText: string;
+  navigationText?: string;
+  navigationImageSrc?: string;
+  navigationImageAlt?: string;
   handleFunction?: () => MouseEventHandler<T>;
 };
 

@@ -1,7 +1,7 @@
 import { useArtistContext } from "@/app/context/ArtistContext";
 
 import Paragraph from "../../Paragraph/Paragraph";
-import NavigaionElement from "../../Navigation/NavigationElement";
+import NavigationElement from "../../Navigation/NavigationElement";
 
 import type { SomeContentProps } from "@/app/types";
 
@@ -13,7 +13,7 @@ export default function ArticleIBody({ pickedIndex }: SomeContentProps) {
   return (
     <>
       <Paragraph dataToShow={bodyData!.article.body} />
-      <NavigaionElement
+      <NavigationElement
         navigationType="LINK"
         navigationClass="link-content"
         navigationText="Continue Reading"

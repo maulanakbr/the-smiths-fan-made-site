@@ -26,7 +26,7 @@ export default function Footer() {
   };
 
   return (
-    <footer>
+    <footer className="footer-content">
       <ul role="list">
         {navigationMenu.map((item) => (
           <li key={item} onClick={() => handleClickNavigation(item)}>
@@ -34,9 +34,9 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      <ComponentHeader>
+      {/* <ComponentHeader>
         &copy; Maulana Akbar Y <span>{getYear}</span>
-      </ComponentHeader>
+      </ComponentHeader> */}
     </footer>
   );
 }

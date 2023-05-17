@@ -4,5 +4,6 @@
   @include flex-container($align: flex-start, $gap: 1.5rem);
   max-width: 18em;
   margin: auto;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.5px solid clr(neutral-white, 100);
 }
