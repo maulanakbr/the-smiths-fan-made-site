@@ -1,0 +1,12 @@
+@use "../../abstracts/" as *;
+
+.album-info {
+  width: 18em;
+  @include flex-container($gap: 1rem, $align: flex-start);
+
+  .album-info-text {
+    & :nth-child(1) {
+      font-size: fs(xs);
+    }
+  }
+}

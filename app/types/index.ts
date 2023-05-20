@@ -9,6 +9,7 @@ import type {
   ContextProps,
   NavigationProps,
   ComponentHeaderProps,
+  ContentFillProps,
   ParagraphProps,
   SomeContentProps,
 } from "./app.type";
@@ -23,6 +24,7 @@ export type {
   ContextProps,
   NavigationProps,
   ComponentHeaderProps,
+  ContentFillProps,
   ParagraphProps,
   SomeContentProps,
 };

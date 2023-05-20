@@ -15,6 +15,12 @@ export default function ComponentHeader({
           <p>{subText}</p>
         </div>
       )}
+      {type === "H1_TAG" && (
+        <div className={headerClass}>
+          <p>{subText}</p>
+          <h3>{headerText}</h3>
+        </div>
+      )}
       {type === "H2" && <h2 className={headerClass}>{headerText}</h2>}
       {type === "H3" && <h3 className={headerClass}>{headerText}</h3>}
       {type === "H4" && <h4 className={headerClass}>{headerText}</h4>}

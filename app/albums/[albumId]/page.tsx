@@ -3,10 +3,11 @@
 import { usePathname } from "next/navigation";
 import { useFetch } from "@/app/hooks/useFetch";
 
+import AlbumCard from "@/app/components/Cards/Albums/AlbumCard";
+
 import extractPath from "@/app/utils/extractPath";
 
 import type { Discogs } from "@/app/types";
-import AlbumCard from "@/app/components/Cards/Album/AlbumCard";
 
 export default function AlbumIdPage() {
   const pathName: string = usePathname();
@@ -15,8 +16,6 @@ export default function AlbumIdPage() {
     false,
     extractPath(pathName)
   );
-
-  console.log(data);
 
   if (error) return <div>Request Error</div>;
   if (isLoading) return <div>Loading Album Brow...</div>;

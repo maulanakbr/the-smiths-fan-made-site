@@ -1,3 +1,5 @@
+import type Artist from "./artist.interface";
+
 import type {
   AlbumLengthProps,
   ChartProps,
@@ -10,7 +12,7 @@ import type {
 export default interface Discogs extends Array<Discogs> {
   albumId: string;
   albumName: string;
-  artist: string;
+  artist: Artist;
   releaseDate: string;
   recorded: number;
   label: string;

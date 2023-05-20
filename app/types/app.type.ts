@@ -39,6 +39,7 @@ export type NavigationProps<T> = {
 enum ComponentHeaderEnum {
   H1,
   H1_SUB,
+  H1_TAG,
   H2,
   H3,
   H4,
@@ -46,9 +47,15 @@ enum ComponentHeaderEnum {
 
 export type ComponentHeaderProps = {
   type: keyof typeof ComponentHeaderEnum;
-  headerText: string;
+  headerText: string | string[];
   subText?: string;
   headerClass?: string;
+};
+
+export type ContentFillProps = {
+  contentCategory: string;
+  contentData: string | string[];
+  contentClass?: string;
 };
 
 export type ParagraphProps<T = Artist> = {

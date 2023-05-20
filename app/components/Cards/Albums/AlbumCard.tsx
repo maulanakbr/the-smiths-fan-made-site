@@ -1,17 +1,17 @@
 import DiscogsContext from "@/app/context/DiscogsContext";
 
 import Container from "../../Layout/Container";
-import ImageElement from "../../Image/ImageElement";
-import AlbumInfo from "./AlbumInfo";
+import AlbumHero from "./AlbumHero";
+import AlbumGeneralInfo from "./AlbumGeneralInfo";
 
 import type { ContextProps, Discogs } from "@/app/types";
 
 export default function AlbumCard({ discogs }: ContextProps<Discogs>) {
   return (
     <DiscogsContext.Provider value={{ discogs }}>
+      <AlbumHero />
       <Container>
-        <ImageElement imageSrc={discogs!.artwork} imageAlt={discogs!.albumId} />
-        <AlbumInfo />
+        <AlbumGeneralInfo />
       </Container>
     </DiscogsContext.Provider>
   );
