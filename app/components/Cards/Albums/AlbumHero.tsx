@@ -10,9 +10,9 @@ export default function AlbumHero() {
     <div className="album-hero-content">
       <ImageElement imageSrc={discogs!.artwork} imageAlt={discogs!.albumId} />
       <ComponentHeader
-        type="H1_TAG"
-        headerText={discogs!.albumName}
-        subText={discogs!.artist.artistName}
+        headerType="H1_TAG"
+        headerText={discogs!.artist.artistName}
+        subText={discogs!.albumName}
         headerClass="album-hero-text"
       />
     </div>

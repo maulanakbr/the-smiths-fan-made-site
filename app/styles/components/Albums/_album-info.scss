@@ -5,8 +5,6 @@
   @include flex-container($gap: 1rem, $align: flex-start);
 
   .album-info-text {
-    & :nth-child(1) {
-      font-size: fs(xs);
-    }
+    font-size: fs(xs);
   }
 }

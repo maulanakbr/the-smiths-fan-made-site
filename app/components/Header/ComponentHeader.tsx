@@ -1,29 +1,49 @@
 import type { ComponentHeaderProps } from "@/app/types";
 
 export default function ComponentHeader({
-  type,
+  headerType,
   headerText,
   subText,
   headerClass,
 }: ComponentHeaderProps) {
   return (
     <>
-      {type === "H1" && <h1 className={headerClass}>{headerText}</h1>}
-      {type === "H1_SUB" && (
+      {headerType === "H1" && (
+        <header>
+          <h1 className={headerClass}>{headerText}</h1>
+        </header>
+      )}
+      {headerType === "H1_SUB" && (
         <div className={headerClass}>
-          <h1>{headerText}</h1>
-          <p>{subText}</p>
+          <header>
+            <h1>{headerText}</h1>
+          </header>
+          <div>{subText}</div>
         </div>
       )}
-      {type === "H1_TAG" && (
+      {headerType === "H1_TAG" && (
         <div className={headerClass}>
-          <p>{subText}</p>
-          <h3>{headerText}</h3>
+          <header>
+            <h4>{headerText}</h4>
+          </header>
+          <div>{subText}</div>
         </div>
       )}
-      {type === "H2" && <h2 className={headerClass}>{headerText}</h2>}
-      {type === "H3" && <h3 className={headerClass}>{headerText}</h3>}
-      {type === "H4" && <h4 className={headerClass}>{headerText}</h4>}
+      {headerType === "H2" && (
+        <header>
+          <h2 className={headerClass}>{headerText}</h2>
+        </header>
+      )}
+      {headerType === "H3" && (
+        <header>
+          <h3 className={headerClass}>{headerText}</h3>
+        </header>
+      )}
+      {headerType === "H4" && (
+        <header>
+          <h4 className={headerClass}>{headerText}</h4>
+        </header>
+      )}
     </>
   );
 }

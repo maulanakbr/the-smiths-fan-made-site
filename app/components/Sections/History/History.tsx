@@ -23,7 +23,7 @@ export default function History({ artist }: ContextProps<Artist>) {
   return (
     <ArtistContext.Provider value={{ artist }}>
       <Container>
-        <ComponentHeader type="H3" headerText="History" />
+        <ComponentHeader headerType="H3" headerText="History" />
         <Paragraph dataToShow={artist!.history.historyContent} />
         <NavigationElement
           navigationType="BUTTON"

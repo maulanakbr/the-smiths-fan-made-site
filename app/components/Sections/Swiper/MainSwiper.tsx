@@ -12,7 +12,7 @@ export default function MainSwiper({ artist }: ContextProps<Artist>) {
   return (
     <ArtistContext.Provider value={{ artist }}>
       <Container>
-        <ComponentHeader type="H3" headerText="Discography" />
+        <ComponentHeader headerType="H3" headerText="Discography" />
         <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={30}

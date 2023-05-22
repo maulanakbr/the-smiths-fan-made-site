@@ -12,7 +12,7 @@ export default function Article({ artist }: ContextProps<Artist>) {
   return (
     <ArtistContext.Provider value={{ artist }}>
       <Container>
-        <ComponentHeader type="H3" headerText="Articles" />
+        <ComponentHeader headerType="H3" headerText="Articles" />
         {artist?.contents.map((item, index) => (
           <div key={item.contentId}>
             <ImageElement

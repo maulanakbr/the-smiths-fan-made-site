@@ -46,15 +46,22 @@ enum ComponentHeaderEnum {
 }
 
 export type ComponentHeaderProps = {
-  type: keyof typeof ComponentHeaderEnum;
+  headerType: keyof typeof ComponentHeaderEnum;
   headerText: string | string[];
   subText?: string;
   headerClass?: string;
 };
 
+enum ContentFillEnum {
+  NORMAL,
+  TABLE,
+}
+
 export type ContentFillProps = {
-  contentCategory: string;
-  contentData: string | string[];
+  contentType: keyof typeof ContentFillEnum;
+  contentCategory?: string;
+  contentData?: string | string[];
+  children?: ReactNode;
   contentClass?: string;
 };
 

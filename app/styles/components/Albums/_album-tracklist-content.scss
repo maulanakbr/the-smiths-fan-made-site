@@ -1,0 +1,38 @@
+@use "../../abstracts/" as *;
+
+.album-tracklist-content {
+  width: 20em;
+  font-size: fs(xs);
+
+  .album-tracklist-table {
+    table {
+      display: table;
+      width: 100%;
+      table-layout: auto;
+      box-sizing: border-box;
+      border-collapse: collapse;
+      border-spacing: 5px;
+      vertical-align: middle;
+
+      tr {
+        display: table-row;
+        height: 4rem;
+        border-bottom: 0.2px solid clr(neutral-white, 100);
+
+        td:nth-child(1) {
+          width: 12%;
+          padding-right: 14px;
+        }
+
+        td:nth-child(2) {
+          width: 100%;
+          padding-right: 12px;
+        }
+      }
+
+      tr:last-child {
+        border: none;
+      }
+    }
+  }
+}

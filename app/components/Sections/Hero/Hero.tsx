@@ -14,7 +14,7 @@ export default function Hero({ artist }: ContextProps<Artist>) {
           imageAlt={artist!.bandImages[0].url[10]}
         />
         <ComponentHeader
-          type="H1_SUB"
+          headerType="H1_SUB"
           headerText={artist?.artistName!}
           subText={artist?.yearsActive!}
           headerClass="hero-text"

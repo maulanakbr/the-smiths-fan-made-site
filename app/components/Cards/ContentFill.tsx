@@ -1,18 +1,30 @@
+import ComponentHeader from "../Header/ComponentHeader";
+
 import type { ContentFillProps } from "@/app/types";
 
 export default function ContentFill({
+  contentType,
   contentCategory,
   contentData,
+  children,
   contentClass,
 }: ContentFillProps) {
   return (
-    <div className={contentClass}>
-      <p>{contentCategory}</p>
-      {typeof contentData === "object" ? (
-        contentData.map((item) => <h4 key={item}>{item}</h4>)
+    <>
+      {contentType === "NORMAL" ? (
+        <div className={contentClass}>
+          <ComponentHeader headerType="H4" headerText={contentCategory!} />
+          <div>
+            {typeof contentData === "object" ? (
+              contentData.map((item) => <div key={item}>{item}</div>)
+            ) : (
+              <div>{contentData}</div>
+            )}
+          </div>
+        </div>
       ) : (
-        <h4>{contentData}</h4>
+        <tr>{children}</tr>
       )}
-    </div>
+    </>
   );
 }

@@ -25,16 +25,17 @@
     border-left: 0.5px solid clr(neutral-white, 100);
     z-index: 10;
 
-    & h3 {
-      color: clr(component-colors, 100);
-      letter-spacing: 0.2rem;
-      line-height: 1.2em;
-    }
-
-    & p {
+    & h4 {
       font-family: $ff-bodoni;
       font-size: fs(xs);
       letter-spacing: 0.3rem;
+    }
+
+    & div {
+      font-weight: fw(medium);
+      color: clr(component-colors, 100);
+      letter-spacing: 0.2rem;
+      line-height: 1.2em;
     }
   }
 }

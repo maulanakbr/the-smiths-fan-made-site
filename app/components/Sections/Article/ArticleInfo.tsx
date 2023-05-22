@@ -12,7 +12,7 @@ export default function ArticleInfo({ pickedIndex }: SomeContentProps) {
 
   return (
     <>
-      <ComponentHeader type="H4" headerText={bodyData!.article.title} />
+      <ComponentHeader headerType="H4" headerText={bodyData!.article.title} />
       <div className="article-info">
         <Paragraph
           dataToShow={bodyData!.article.writters}
