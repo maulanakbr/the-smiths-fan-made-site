@@ -37,7 +37,7 @@ export default function Header() {
       {/* Clicked Menu */}
       {toggle === true ? (
         <ul role="list">
-          {navigationMenu.map((item, index) => (
+          {navigationMenu!.map((item, index) => (
             <li key={index} onClick={() => handleClickNavigation(item)}>
               {item}
             </li>
