@@ -10,7 +10,7 @@ import extractPath from "@/app/utils/extractPath";
 import type { Discogs } from "@/app/types";
 
 export default function AlbumIdPage() {
-  const pathName: string = usePathname();
+  const pathName: string | undefined = usePathname();
 
   const { data, isLoading, error } = useFetch<Discogs>(
     false,
