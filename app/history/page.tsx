@@ -12,8 +12,6 @@ export default function HistoryPage() {
   if (error) return <div>Request Error</div>;
   if (isLoading) return <div>Loading History Brow...</div>;
 
-  console.log(data);
-
   const returnedData: Artist = data![0];
 
   return (
