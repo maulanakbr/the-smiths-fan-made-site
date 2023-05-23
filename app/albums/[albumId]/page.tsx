@@ -17,12 +17,14 @@ export default function AlbumIdPage() {
     extractPath(pathName!)
   );
 
+  const returnedData: Discogs = data!;
+
   if (error) return <div>Request Error</div>;
   if (isLoading) return <div>Loading Album Brow...</div>;
 
   return (
     <>
-      <AlbumCard discogs={data} />
+      <AlbumCard discogs={returnedData} />
     </>
   );
 }
