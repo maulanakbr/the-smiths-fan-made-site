@@ -1,6 +1,10 @@
 const extractPath = (data: string | undefined): string => {
   if (data !== undefined) {
-    return data!.split("/")[2].toUpperCase();
+    const splitData: string[] = data!.split("/");
+
+    console.log(splitData);
+
+    return splitData[2].toUpperCase();
   }
 
   return "Request error";
