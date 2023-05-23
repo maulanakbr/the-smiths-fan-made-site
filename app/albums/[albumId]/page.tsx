@@ -17,7 +17,7 @@ export default function AlbumIdPage() {
 
   useEffect(() => {
     setExtractedPath(extractPath(pathName));
-  }, [pathName]);
+  }, [pathName, setExtractedPath]);
 
   const { data, isLoading, error } = useFetch<Discogs>(false, extractedPath);
 
