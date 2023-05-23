@@ -5,9 +5,9 @@ const extractPath = (data: string | undefined): string => {
     console.log(splitData);
 
     return splitData[2].toUpperCase();
+  } else {
+    throw new Error("Error when extracting path");
   }
-
-  return "Error when extracting path";
 };
 
 export default extractPath;
