@@ -21,7 +21,7 @@ export default function MainSwiper({ artist }: ContextProps<Artist>) {
           pagination={{ clickable: true }}
           speed={300}
         >
-          {artist?.discogs.map((item, index) => (
+          {artist!.discogs.map((item, index) => (
             <SwiperSlide key={item.albumId}>
               <SwiperItem pickedIndex={index} />
             </SwiperSlide>
