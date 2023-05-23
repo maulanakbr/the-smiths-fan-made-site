@@ -5,17 +5,19 @@ import type { ParagraphProps } from "@/app/types";
 export default function Paragraph({
   dataToShow,
   isTruncated = true,
+  numberOfTruncated = 300,
+  paragraphClass,
 }: ParagraphProps) {
   const paragraphToShow: string =
     isTruncated && typeof dataToShow === "string"
-      ? truncate(dataToShow, 300)
+      ? truncate(dataToShow, numberOfTruncated)
       : typeof dataToShow === "object"
       ? dataToShow[0].toString()
       : dataToShow;
 
   return (
     <>
-      <p className="paragraph-content">{paragraphToShow}</p>
+      <p className={paragraphClass}>{paragraphToShow}</p>
     </>
   );
 }

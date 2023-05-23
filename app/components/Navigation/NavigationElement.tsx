@@ -10,6 +10,7 @@ export default function NavigationElement({
   navigationImageSrc,
   navigationImageAlt,
   navigationText,
+  children,
   handleFunction,
 }: NavigationProps<HTMLButtonElement | HTMLAnchorElement>) {
   return (
@@ -27,13 +28,21 @@ export default function NavigationElement({
             />
           ) : null}
         </Link>
-      ) : (
+      ) : navigationType === "LINK" ? (
         <Link
           className={navigationClass}
           href={navigationLink!}
           target="_blank"
         >
           {navigationText}
+        </Link>
+      ) : (
+        <Link
+          className={navigationClass}
+          href={navigationLink!}
+          target="_blank"
+        >
+          {children}
         </Link>
       )}
     </>

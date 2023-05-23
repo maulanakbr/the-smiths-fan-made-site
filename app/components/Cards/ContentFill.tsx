@@ -16,7 +16,7 @@ export default function ContentFill({
           <ComponentHeader headerType="H4" headerText={contentCategory!} />
           <div>
             {typeof contentData === "object" ? (
-              contentData.map((item) => <div key={item}>{item}</div>)
+              contentData.map((item, index) => <div key={index}>{item}</div>)
             ) : (
               <div>{contentData}</div>
             )}

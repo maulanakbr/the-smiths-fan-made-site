@@ -1,0 +1,10 @@
+@use "../../abstracts/" as *;
+
+.album-listening-platform-content {
+  width: 18em;
+
+  ul {
+    width: 100%;
+    @include flex-container($direction: row, $gap: 1.5rem);
+  }
+}

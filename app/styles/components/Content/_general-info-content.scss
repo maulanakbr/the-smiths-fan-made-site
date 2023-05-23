@@ -1,10 +1,10 @@
 @use "../../abstracts/" as *;
 
-.album-info {
+.general-info-content {
   width: 18em;
   @include flex-container($gap: 1rem, $align: flex-start);
 
-  .album-info-text {
+  .general-info-text {
     font-size: fs(xs);
   }
 }

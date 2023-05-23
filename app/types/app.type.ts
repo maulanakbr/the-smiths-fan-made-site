@@ -24,6 +24,7 @@ enum NavigationEnum {
   BUTTON,
   LINK,
   IMAGE,
+  ICON,
 }
 
 export type NavigationProps<T> = {
@@ -33,6 +34,7 @@ export type NavigationProps<T> = {
   navigationText?: string;
   navigationImageSrc?: string;
   navigationImageAlt?: string;
+  children?: ReactNode;
   handleFunction?: () => MouseEventHandler<T>;
 };
 
@@ -68,6 +70,8 @@ export type ContentFillProps = {
 export type ParagraphProps<T = Artist> = {
   dataToShow: T extends Artist ? string | string[] : null;
   isTruncated?: boolean;
+  numberOfTruncated?: number;
+  paragraphClass?: string | undefined;
 };
 
 export type SomeContentProps = {

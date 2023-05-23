@@ -12,7 +12,10 @@ export default function ArticleIBody({ pickedIndex }: SomeContentProps) {
 
   return (
     <>
-      <Paragraph dataToShow={bodyData!.article.body} />
+      <Paragraph
+        dataToShow={bodyData!.article.body}
+        paragraphClass="paragraph-content"
+      />
       <NavigationElement
         navigationType="LINK"
         navigationClass="link-content"

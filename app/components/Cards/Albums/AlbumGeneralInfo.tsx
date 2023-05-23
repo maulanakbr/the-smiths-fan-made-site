@@ -6,18 +6,18 @@ export default function AlbumGeneralInfo() {
   const { discogs } = useDiscogsContext();
 
   return (
-    <div className="album-info">
+    <div className="general-info-content">
       <ContentFill
         contentType="NORMAL"
         contentData={discogs!.albumId}
         contentCategory="Album ID"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
         contentData={discogs!.label}
         contentCategory="Label"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
@@ -27,19 +27,19 @@ export default function AlbumGeneralInfo() {
             : discogs!.albumLength.toString()
         }
         contentCategory="Length"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
         contentData={discogs!.recorded.toString()}
         contentCategory="Recorded"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
         contentData={discogs!.releaseDate}
         contentCategory="Release"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
@@ -49,7 +49,7 @@ export default function AlbumGeneralInfo() {
             : discogs!.studio
         }
         contentCategory="Studio"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
@@ -59,19 +59,19 @@ export default function AlbumGeneralInfo() {
             : discogs!.producer
         }
         contentCategory="Producer"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
         contentData={discogs!.musicComposer}
         contentCategory="Composer"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
       <ContentFill
         contentType="NORMAL"
         contentData={discogs!.lyricist}
         contentCategory="Lyrics"
-        contentClass="album-info-text"
+        contentClass="general-info-text"
       />
     </div>
   );

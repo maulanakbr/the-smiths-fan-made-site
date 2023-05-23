@@ -1,0 +1,12 @@
+@use "../../abstracts/" as *;
+
+.album-hero-play-button-content {
+  @include flex-container($content: center);
+  width: 5.3em;
+  border: 1px solid clr(neutral-white, 100);
+  border-radius: 100%;
+
+  .album-play-icon {
+    color: clr(neutral-white, 200);
+  }
+}
