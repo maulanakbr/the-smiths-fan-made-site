@@ -12,12 +12,9 @@ import type { Discogs } from "@/app/types";
 export default function AlbumIdPage() {
   const pathName: string | undefined = usePathname();
 
-  const { data, isLoading, error } = useFetch<Discogs>(
-    false,
-    extractPath(pathName)
-  );
+  const extractedPath: string = extractPath(pathName);
 
-  console.log(pathName);
+  const { data, isLoading, error } = useFetch<Discogs>(false, extractedPath);
 
   if (error) return <div>Request Error</div>;
   if (isLoading) return <div>Loading Album Brow...</div>;

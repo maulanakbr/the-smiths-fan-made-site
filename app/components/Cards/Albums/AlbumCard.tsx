@@ -1,5 +1,3 @@
-"use client";
-
 import DiscogsContext from "@/app/context/DiscogsContext";
 
 import Container from "../../Layout/Container";
