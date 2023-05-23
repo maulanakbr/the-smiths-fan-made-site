@@ -7,9 +7,9 @@ import type { SomeContentProps } from "@/app/types";
 export default function SwiperItem({ pickedIndex }: SomeContentProps) {
   const { artist } = useArtistContext();
 
-  const swiperData = artist?.discogs[pickedIndex];
+  const swiperData = artist!.discogs[pickedIndex];
 
-  const swiperPath = swiperData?.albumId.toLowerCase();
+  const swiperPath = swiperData!.albumId.toLowerCase();
 
   return (
     <>
