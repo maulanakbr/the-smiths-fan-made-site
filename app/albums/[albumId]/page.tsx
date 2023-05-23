@@ -17,6 +17,8 @@ export default function AlbumIdPage() {
     extractPath(pathName!)
   );
 
+  console.log(pathName);
+
   if (error) return <div>Request Error</div>;
   if (isLoading) return <div>Loading Album Brow...</div>;
 
