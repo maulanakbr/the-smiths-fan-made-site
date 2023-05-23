@@ -14,7 +14,7 @@ export default function AlbumIdPage() {
 
   const { data, isLoading, error } = useFetch<Discogs>(
     false,
-    extractPath(pathName)
+    extractPath(pathName!)
   );
 
   if (error) return <div>Request Error</div>;
