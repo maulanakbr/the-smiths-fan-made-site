@@ -33,4 +33,12 @@
       letter-spacing: 0.5rem;
     }
   }
+
+  @media screen and (min-width: 375px) {
+    width: 21em;
+
+    &::before {
+      width: 21em;
+    }
+  }
 }

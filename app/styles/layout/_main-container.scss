@@ -6,4 +6,8 @@
   margin: auto;
   aspect-ratio: auto;
   white-space: normal;
+
+  @media screen and (min-width: 375px) {
+    max-width: 21em;
+  }
 }
