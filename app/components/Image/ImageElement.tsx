@@ -17,6 +17,8 @@ export default function ImageElement({
         width={imageWidth}
         height={imageHeight}
         priority
+        placeholder="blur"
+        blurDataURL={imageSrc}
       />
     </>
   );

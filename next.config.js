@@ -2,9 +2,6 @@
 const path = require("path");
 
 const nextConfig = {
-  experimental: {
-    appDir: true,
-  },
   swcMinify: true,
   optimizeFonts: true,
   images: {
@@ -31,7 +28,7 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  reactStrictMode: false,
+  // reactStrictMode: false,
 };
 
 module.exports = nextConfig;

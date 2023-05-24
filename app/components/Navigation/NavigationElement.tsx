@@ -20,7 +20,11 @@ export default function NavigationElement({
           {navigationText}
         </button>
       ) : navigationType === "IMAGE" ? (
-        <Link className={navigationClass} href={navigationLink!}>
+        <Link
+          className={navigationClass}
+          href={navigationLink!}
+          as={navigationLink!}
+        >
           {navigationImageSrc && navigationImageAlt !== undefined ? (
             <ImageElement
               imageSrc={navigationImageSrc}
