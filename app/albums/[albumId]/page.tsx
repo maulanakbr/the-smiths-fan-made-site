@@ -3,7 +3,9 @@
 import { usePathname } from "next/navigation";
 import { useFetch } from "@/app/hooks/useFetch";
 
+import MainContainer from "@/app/components/Layout/MainContainer";
 import AlbumCard from "@/app/components/Cards/Albums/AlbumCard";
+import MainPageLoading from "@/app/components/Loading/MainPageLoading";
 
 import extractPath from "@/app/utils/extractPath";
 
@@ -17,14 +19,16 @@ export default function AlbumIdPage() {
     extractPath(pathName)
   );
 
+  if (isLoading) return <MainPageLoading />;
   if (error) return <div>Request Album Error</div>;
-  if (isLoading) return <div>Loading Album Brow...</div>;
 
   const returnedData: Discogs = data!;
 
   return (
     <>
-      <AlbumCard discogs={returnedData} />
+      <MainContainer>
+        <AlbumCard discogs={returnedData} />
+      </MainContainer>
     </>
   );
 }

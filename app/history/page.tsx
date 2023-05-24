@@ -2,21 +2,25 @@
 
 import { useFetch } from "../hooks/useFetch";
 
+import MainContainer from "@/app/components/Layout/MainContainer";
 import HistoryCard from "../components/Cards/History/HistoryCard";
+import MainPageLoading from "../components/Loading/MainPageLoading";
 
 import type { Artist } from "../types";
 
 export default function HistoryPage() {
   const { data, isLoading, error } = useFetch<Artist>(true);
 
+  if (isLoading) return <MainPageLoading />;
   if (error) return <div>Request Error</div>;
-  if (isLoading) return <div>Loading History Brow...</div>;
 
   const returnedData: Artist = data![0];
 
   return (
     <>
-      <HistoryCard artist={returnedData} />
+      <MainContainer>
+        <HistoryCard artist={returnedData} />
+      </MainContainer>
     </>
   );
 }

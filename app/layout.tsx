@@ -1,6 +1,4 @@
 import MainContainer from "./components/Layout/MainContainer";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
 
 import "../app/styles/global.scss";
 import "swiper/swiper-bundle.css";
@@ -16,13 +14,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: ChildrenProps) {
   return (
     <html lang="en">
-      <body>
-        <MainContainer>
-          <Header />
-          {children}
-          <Footer />
-        </MainContainer>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
