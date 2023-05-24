@@ -1,6 +1,7 @@
 import type Artist from "./artist.interface";
 import type Discogs from "./discogs.interface";
 import type { ChartProps, RatingProps, PlatformProps } from "./discogs.type";
+import type { ContentProps } from "./artist.type";
 import type { ImageElementProps } from "./app.interface";
 
 import type {
@@ -21,6 +22,7 @@ export type {
   ChartProps,
   RatingProps,
   PlatformProps,
+  ContentProps,
   ImageElementProps,
   ChildrenProps,
   FetcherProps,

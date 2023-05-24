@@ -6,7 +6,7 @@ export default function Paragraph({
   dataToShow,
   isTruncated = true,
   numberOfTruncated = 300,
-  paragraphClass,
+  paragraphClass = "paragraph-content",
 }: ParagraphProps) {
   const paragraphToShow: string =
     isTruncated && typeof dataToShow === "string"

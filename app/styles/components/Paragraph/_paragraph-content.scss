@@ -1,5 +1,6 @@
 @use "../../abstracts/" as *;
 
 .paragraph-content {
-  line-height: 2.3em;
+  font-size: fs(xs);
+  line-height: 2em;
 }

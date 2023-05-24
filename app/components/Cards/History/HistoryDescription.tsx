@@ -1,6 +1,6 @@
 import { useArtistContext } from "@/app/context/ArtistContext";
 
-import ContentFill from "../ContentFill";
+import ContentFill from "../../ContentFill";
 import NavigationElement from "../../Navigation/NavigationElement";
 import Paragraph from "../../Paragraph/Paragraph";
 

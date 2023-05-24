@@ -1,7 +1,7 @@
 import { useDiscogsContext } from "@/app/context/DiscogsContext";
 
 import ComponentHeader from "../../Header/ComponentHeader";
-import ContentFill from "../ContentFill";
+import ContentFill from "../../ContentFill";
 
 export default function AlbumTracklist() {
   const { discogs } = useDiscogsContext();

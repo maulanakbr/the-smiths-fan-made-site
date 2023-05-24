@@ -14,7 +14,7 @@ export default function Article({ artist }: ContextProps<Artist>) {
       <Container>
         <ComponentHeader headerType="H3" headerText="Articles" />
         {artist?.contents.map((item, index) => (
-          <div key={item.contentId}>
+          <div className="article-content" key={item.contentId}>
             <ImageElement
               imageSrc={item.article.image}
               imageAlt={item.contentId}

@@ -1,6 +1,6 @@
 import { useDiscogsContext } from "@/app/context/DiscogsContext";
 
-import ContentFill from "../ContentFill";
+import ContentFill from "../../ContentFill";
 
 import type { ChartProps } from "@/app/types";
 
