@@ -2,8 +2,6 @@
 
 import { useRouter } from "next/navigation";
 
-import ComponentHeader from "../Header/ComponentHeader";
-
 import navigationMenu from "@/app/utils/navigationMenu";
 
 import type { MouseEventHandler } from "react";
@@ -34,9 +32,7 @@ export default function Footer() {
           </li>
         ))}
       </ul>
-      {/* <ComponentHeader>
-        &copy; Maulana Akbar Y <span>{getYear}</span>
-      </ComponentHeader> */}
+      <span>&copy; Maulana Akbar Yudistika {getYear}</span>
     </footer>
   );
 }
