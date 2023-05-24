@@ -2,7 +2,10 @@
 
 import { useRouter } from "next/navigation";
 
-import navigationMenu from "@/app/utils/navigationMenu";
+import NavigationElement from "../Navigation/NavigationElement";
+import { SiGithub } from "react-icons/si";
+
+import { navigationMenuList, projectAuthor } from "@/app/utils/navigationMenu";
 
 import type { MouseEventHandler } from "react";
 import type { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
@@ -16,23 +19,32 @@ export default function Footer() {
   const handleClickNavigation = (
     item: string
   ): MouseEventHandler<HTMLLIElement> extends void ? MouseEvent : any => {
-    if (item === "Home") {
-      router.push("/");
-    } else {
-      router.push(`/${item.toLowerCase()}`);
-    }
+    router.push(item);
   };
 
   return (
     <footer className="footer-content">
       <ul role="list">
-        {navigationMenu.map((item) => (
-          <li key={item} onClick={() => handleClickNavigation(item)}>
-            {item}
+        {navigationMenuList.map((item) => (
+          <li
+            key={item.navMenuType}
+            onClick={() => handleClickNavigation(item.navTarget)}
+          >
+            {item.navMenuType}
           </li>
         ))}
       </ul>
-      <span>&copy; Maulana Akbar Yudistika {getYear}</span>
+      <div>
+        <NavigationElement
+          navigationType="ICON"
+          navigationClass="link-content"
+          navigationLink={projectAuthor.githubProfile}
+          navigationText="GITHUB"
+        >
+          <SiGithub />
+        </NavigationElement>
+        <span>&copy; Maulana Akbar Yudistika {getYear}</span>
+      </div>
     </footer>
   );
 }

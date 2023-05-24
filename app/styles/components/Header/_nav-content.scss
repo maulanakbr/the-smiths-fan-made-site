@@ -3,12 +3,12 @@
 .nav-content {
   position: fixed;
   right: 1rem;
-  width: 10em;
+  width: 12em;
   height: 2.5rem;
   margin-top: 1rem;
   display: flex;
   justify-content: flex-end;
-  font-size: fs(xl);
+  font-size: fs(l);
   font-weight: fw(medium);
   z-index: 30;
 
@@ -16,18 +16,34 @@
     z-index: 10;
   }
 
-  ul {
-    @include flex-container($content: center, $gap: 0.2rem);
+  .navigation-list-content {
+    @include flex-container($content: space-between, $gap: 1rem);
     position: absolute;
-    width: 100%;
-    min-height: 18em;
     top: 0;
+    width: 100%;
+    min-height: 20em;
     flex-direction: column;
-    padding: 1rem;
+    padding: 3rem 1rem;
     background-color: clr(neutral-black, 300);
 
+    & ul {
+      margin-top: 2rem;
+
+      li :nth-child(1) {
+        margin-bottom: 0;
+        font-size: fs(m);
+      }
+
+      span {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: fs(xs);
+        font-weight: fw(light);
+      }
+    }
+
     & li {
-      height: 3.5rem;
+      // height: 2.5rem;
       width: 100%;
     }
   }

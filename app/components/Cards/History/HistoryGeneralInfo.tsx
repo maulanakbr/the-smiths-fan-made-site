@@ -21,7 +21,8 @@ export default function HistoryGeneralInfo() {
         contentClass="general-info-text"
       />
       <NavigationElement
-        navigationType="BUTTON"
+        navigationType="LINK"
+        navigationClass="link-content"
         navigationLink={artist?.website}
         navigationText="Official Website"
       />

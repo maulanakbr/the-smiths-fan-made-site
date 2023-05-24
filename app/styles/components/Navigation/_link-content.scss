@@ -6,9 +6,13 @@
   height: 2.7rem;
   padding: 1rem;
   margin-bottom: 1rem;
-  font-size: fs(xs);
   color: clr(component-colors, 100);
+  font-size: fs(xs);
   border: 0.5px solid clr(component-colors, 100);
+
+  & :nth-child(2) {
+    color: clr(neutral-white, 100);
+  }
 
   &:hover {
     border-color: clr(component-colors, 200);

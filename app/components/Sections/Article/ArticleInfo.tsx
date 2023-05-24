@@ -1,7 +1,5 @@
 import { useArtistContext } from "@/app/context/ArtistContext";
 
-import ComponentHeader from "../../Header/ComponentHeader";
-import Paragraph from "../../Paragraph/Paragraph";
 import ContentFill from "../../ContentFill";
 
 import type { ContentProps, SomeContentProps } from "@/app/types";

@@ -1,8 +1,8 @@
-import { HiOutlineArrowUpRight } from "react-icons/hi2";
 import Link from "next/link";
 import ImageElement from "../Image/ImageElement";
 
 import type { NavigationProps } from "@/app/types";
+import ComponentHeader from "../Header/ComponentHeader";
 
 export default function NavigationElement({
   navigationType,
@@ -40,9 +40,6 @@ export default function NavigationElement({
           target="_blank"
         >
           {navigationText}
-          <div>
-            <HiOutlineArrowUpRight size={20} />
-          </div>
         </Link>
       ) : (
         <Link
@@ -50,7 +47,8 @@ export default function NavigationElement({
           href={navigationLink!}
           target="_blank"
         >
-          {children}
+          {navigationText}
+          <div>{children}</div>
         </Link>
       )}
     </>

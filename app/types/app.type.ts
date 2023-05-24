@@ -38,6 +38,16 @@ export type NavigationProps<T> = {
   handleFunction?: () => MouseEventHandler<T>;
 };
 
+export type NavigationMenuListProps = {
+  navMenuType: string;
+  navTarget: string;
+};
+
+export type ProjectAuthorProps = {
+  authorName: string;
+  githubProfile: string;
+};
+
 enum ComponentHeaderEnum {
   H1,
   H1_SUB,
