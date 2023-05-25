@@ -2,23 +2,15 @@
 
 .history-hero-content {
   position: relative;
-  width: 20em;
+  width: 100%;
 
   &::before {
     content: "";
     position: absolute;
     top: 0;
-    width: 20em;
+    width: 100%;
     height: 100%;
     background-color: clr(neutral-black, 200);
     opacity: 0.5;
-  }
-
-  @media screen and (min-width: 375px) {
-    width: 21em;
-
-    &::before {
-      width: 21em;
-    }
   }
 }
