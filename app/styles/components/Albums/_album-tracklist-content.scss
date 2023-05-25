@@ -1,7 +1,7 @@
 @use "../../abstracts/" as *;
 
 .album-tracklist-content {
-  width: 20em;
+  width: 100%;
   font-size: fs(xs);
 
   .album-tracklist-table {

@@ -23,6 +23,21 @@ export const navigationMenuList: NavigationMenuListProps[] = [
   },
 ];
 
+export const footerMenuList: NavigationMenuListProps[] = [
+  {
+    navMenuType: "Spotify",
+    navTarget: "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8",
+  },
+  {
+    navMenuType: "Apple Music",
+    navTarget: "https://music.apple.com/us/artist/the-smiths/829538",
+  },
+  {
+    navMenuType: "Deezer",
+    navTarget: "https://www.deezer.com/us/artist/1297?deferredFl=1",
+  },
+];
+
 export const projectAuthor: ProjectAuthorProps = {
   authorName: "Maulana Akbar Yudistika",
   githubProfile: "https://github.com/maulanakbr",
@@ -30,5 +45,6 @@ export const projectAuthor: ProjectAuthorProps = {
 
 module.exports = {
   navigationMenuList,
+  footerMenuList,
   projectAuthor,
 };

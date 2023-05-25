@@ -1,8 +1,8 @@
 @use "../../abstracts/" as *;
 
 .general-info-content {
-  width: 18em;
   @include flex-container($gap: 1rem, $align: flex-start);
+  width: 100%;
 
   .general-info-text {
     font-size: fs(xs);

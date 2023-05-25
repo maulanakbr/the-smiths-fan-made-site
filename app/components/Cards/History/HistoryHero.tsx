@@ -8,7 +8,7 @@ export default function HistoryHero() {
   return (
     <div className="history-hero-content">
       <ImageElement
-        imageSrc={artist!.bandImages[0].url[11]}
+        imageSrc={artist!.bandImages[0].url[5]}
         imageAlt={artist!.artistId}
       />
     </div>

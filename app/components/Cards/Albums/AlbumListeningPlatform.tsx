@@ -1,7 +1,7 @@
 import { useDiscogsContext } from "@/app/context/DiscogsContext";
 
-import { SiSpotify, SiApplemusic, SiDeezer } from "react-icons/si";
 import NavigationElement from "../../Navigation/NavigationElement";
+import { SiSpotify, SiApplemusic, SiDeezer } from "react-icons/si";
 
 import type { PlatformProps } from "@/app/types";
 
