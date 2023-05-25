@@ -1,10 +1,13 @@
 @use "../../abstracts/" as *;
 
 .album-listening-platform-content {
+  position: absolute;
+  bottom: 2rem;
+  left: 1.65rem;
   width: 18em;
 
   ul {
     width: 100%;
-    @include flex-container($direction: row, $gap: 1.5rem);
+    @include flex-container($direction: row, $gap: 1rem);
   }
 }

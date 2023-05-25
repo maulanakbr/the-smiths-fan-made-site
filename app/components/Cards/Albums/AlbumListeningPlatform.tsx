@@ -20,7 +20,7 @@ export default function AlbumListeningPlatform() {
             navigationType="ICON"
             navigationLink={platforms.spotify}
           >
-            <SiSpotify size={25} color={iconColors[0]} />
+            <SiSpotify size={17} color={iconColors[0]} />
           </NavigationElement>
         </li>
         <li>
@@ -28,7 +28,7 @@ export default function AlbumListeningPlatform() {
             navigationType="ICON"
             navigationLink={platforms.appleMusic}
           >
-            <SiApplemusic size={25} color={iconColors[1]} />
+            <SiApplemusic size={17} color={iconColors[1]} />
           </NavigationElement>
         </li>
         <li>
@@ -36,7 +36,7 @@ export default function AlbumListeningPlatform() {
             navigationType="ICON"
             navigationLink={platforms.deezer}
           >
-            <SiDeezer size={25} color={iconColors[2]} />
+            <SiDeezer size={17} color={iconColors[2]} />
           </NavigationElement>
         </li>
       </ul>

@@ -3,6 +3,7 @@ import { useDiscogsContext } from "@/app/context/DiscogsContext";
 import ImageElement from "../../Image/ImageElement";
 import ComponentHeader from "../../Header/ComponentHeader";
 import AlbumHeroPlayButton from "./AlbumHeroPlayButton";
+import AlbumListeningPlatform from "./AlbumListeningPlatform";
 
 export default function AlbumHero() {
   const { discogs } = useDiscogsContext();
@@ -10,6 +11,7 @@ export default function AlbumHero() {
   return (
     <div className="album-hero-content">
       <ImageElement imageSrc={discogs!.artwork} imageAlt={discogs!.albumId} />
+      <AlbumListeningPlatform />
       <div className="album-tag-container">
         <ComponentHeader
           headerType="H1_TAG"

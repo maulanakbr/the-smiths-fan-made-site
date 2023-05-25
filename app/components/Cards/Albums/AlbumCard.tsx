@@ -16,12 +16,12 @@ export default function AlbumCard({ discogs }: ContextProps<Discogs>) {
     <DiscogsContext.Provider value={{ discogs }}>
       <AlbumHero />
       <Container>
+        {/* <AlbumListeningPlatform /> */}
         <AlbumGeneralInfo />
         <AlbumTracklist />
         <AlbumDescription />
         <AlbumRatings />
         <AlbumCharts />
-        <AlbumListeningPlatform />
       </Container>
     </DiscogsContext.Provider>
   );
