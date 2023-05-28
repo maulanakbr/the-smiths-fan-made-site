@@ -30,18 +30,6 @@ export default function Footer() {
 
   return (
     <footer className="footer-content">
-      <div className="footer-navigation">
-        <ul role="list">
-          {navigationMenuList.map((item) => (
-            <li
-              key={item.navMenuType}
-              onClick={() => handleClickNavigation(item.navTarget)}
-            >
-              {item.navMenuType}
-            </li>
-          ))}
-        </ul>
-      </div>
       <div className="footer-listening-platform">
         <ul role="list">
           {footerMenuList?.map((item, index) => (
@@ -58,6 +46,18 @@ export default function Footer() {
                   <SiDeezer size={35} color={iconColors[2]} />
                 )}
               </NavigationElement>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="footer-navigation">
+        <ul role="list">
+          {navigationMenuList.map((item) => (
+            <li
+              key={item.navMenuType}
+              onClick={() => handleClickNavigation(item.navTarget)}
+            >
+              {item.navMenuType}
             </li>
           ))}
         </ul>

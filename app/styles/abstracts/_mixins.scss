@@ -4,10 +4,12 @@
   $direction: column,
   $content: flex-start,
   $gap: 2rem,
-  $align: center
+  $align: center,
+  $wrap: no-wrap
 ) {
   display: flex;
   flex-direction: $direction;
+  flex-wrap: $wrap;
   justify-items: center;
   justify-content: $content;
   align-items: $align;

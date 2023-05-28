@@ -2,7 +2,7 @@
 
 .album-hero-play-button-content {
   @include flex-container($content: center);
-  width: 5.5em;
+  width: 4.2em;
   height: 3.5em;
   border: 1px solid clr(neutral-white, 100);
   border-radius: 100%;
@@ -12,6 +12,6 @@
   }
 
   @media screen and (min-width: 360px) {
-    width: 4em;
+    width: 3.8em;
   }
 }
