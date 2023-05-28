@@ -21,6 +21,22 @@
       font-size: fs(xs);
       // border: 1px solid red;
     }
+
+    @media screen and (min-width: 768px) {
+      order: -1;
+      ul {
+        @include flex-container(
+          $direction: column,
+          $content: center,
+          $gap: 1rem,
+          $wrap: wrap
+        );
+        width: 100%;
+        padding: 1rem;
+        font-size: fs(xs);
+        // border: 1px solid red;
+      }
+    }
   }
 
   .footer-listening-platform {
