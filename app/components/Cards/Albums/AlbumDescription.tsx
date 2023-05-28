@@ -1,6 +1,6 @@
 import { useDiscogsContext } from "@/app/context/DiscogsContext";
 
-import ContentFill from "../../ContentFill";
+import ContentFill from "../../Contents/ContentFill";
 
 export default function AlbumDescription() {
   const { discogs } = useDiscogsContext();

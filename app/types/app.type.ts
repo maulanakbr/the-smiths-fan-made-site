@@ -34,6 +34,7 @@ export type NavigationProps<T> = {
   navigationText?: string;
   navigationImageSrc?: string;
   navigationImageAlt?: string;
+  navigationTarget?: string;
   children?: ReactNode;
   handleFunction?: () => MouseEventHandler<T>;
 };

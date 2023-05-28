@@ -1,4 +1,4 @@
-import ComponentHeader from "./Header/ComponentHeader";
+import ComponentHeader from "../Header/ComponentHeader";
 
 import type { ContentFillProps } from "@/app/types";
 

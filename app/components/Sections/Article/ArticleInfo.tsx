@@ -1,6 +1,6 @@
 import { useArtistContext } from "@/app/context/ArtistContext";
 
-import ContentFill from "../../ContentFill";
+import ContentFill from "../../Contents/ContentFill";
 
 import type { ContentProps, SomeContentProps } from "@/app/types";
 

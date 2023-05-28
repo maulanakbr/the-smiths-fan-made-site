@@ -11,6 +11,7 @@ export default function NavigationElement({
   navigationImageSrc,
   navigationImageAlt,
   navigationText,
+  navigationTarget = "_blank",
   children,
   handleFunction,
 }: NavigationProps<HTMLButtonElement | HTMLAnchorElement>) {
@@ -37,7 +38,7 @@ export default function NavigationElement({
         <Link
           className={navigationClass}
           href={navigationLink!}
-          target="_blank"
+          target={navigationTarget}
         >
           {navigationText}
         </Link>
@@ -45,7 +46,7 @@ export default function NavigationElement({
         <Link
           className={navigationClass}
           href={navigationLink!}
-          target="_blank"
+          target={navigationTarget}
         >
           {navigationText}
           <div>{children}</div>
