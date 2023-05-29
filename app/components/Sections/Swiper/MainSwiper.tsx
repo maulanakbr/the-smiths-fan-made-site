@@ -15,8 +15,8 @@ export default function MainSwiper({ artist }: ContextProps<Artist>) {
         <ComponentHeader headerType="H3" headerText="Discography" />
         <Swiper
           modules={[Navigation, Pagination]}
-          spaceBetween={30}
-          slidesPerView={1}
+          spaceBetween={13}
+          slidesPerView={2}
           navigation
           pagination={{ clickable: true }}
           speed={300}

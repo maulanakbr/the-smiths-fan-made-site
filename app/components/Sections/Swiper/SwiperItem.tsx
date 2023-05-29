@@ -15,7 +15,7 @@ export default function SwiperItem({ pickedIndex }: SomeContentProps) {
     <>
       <NavigationElement
         navigationType="IMAGE"
-        navigationClass="discogs-navigation"
+        navigationClass="swiper-image-content"
         navigationImageSrc={swiperData!.artwork}
         navigationImageAlt={swiperData!.albumName}
         navigationLink={`/albums/${swiperPath}`}
