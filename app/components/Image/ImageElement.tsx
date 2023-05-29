@@ -7,11 +7,12 @@ export default function ImageElement({
   imageAlt,
   imageWidth = 300,
   imageHeight = 300,
+  imageClass = "image-content",
 }: ImageElementProps) {
   return (
     <>
       <Image
-        className="image-content"
+        className={imageClass}
         src={imageSrc}
         alt={imageAlt}
         width={imageWidth}

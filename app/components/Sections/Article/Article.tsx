@@ -18,6 +18,7 @@ export default function Article({ artist }: ContextProps<Artist>) {
             <ImageElement
               imageSrc={item.article.image}
               imageAlt={item.contentId}
+              imageClass="article-image-content"
             />
             <ArticleInfo pickedIndex={index} />
             <ArticleBody pickedIndex={index} />

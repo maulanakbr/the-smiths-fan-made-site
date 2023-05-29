@@ -7,7 +7,6 @@ import AlbumTracklist from "./AlbumTracklist";
 import AlbumDescription from "./AlbumDescription";
 import AlbumRatings from "./AlbumRatings";
 import AlbumCharts from "./AlbumCharts";
-import AlbumListeningPlatform from "./AlbumListeningPlatform";
 
 import type { ContextProps, Discogs } from "@/app/types";
 
@@ -16,7 +15,6 @@ export default function AlbumCard({ discogs }: ContextProps<Discogs>) {
     <DiscogsContext.Provider value={{ discogs }}>
       <AlbumHero />
       <Container>
-        {/* <AlbumListeningPlatform /> */}
         <AlbumGeneralInfo />
         <AlbumTracklist />
         <AlbumDescription />

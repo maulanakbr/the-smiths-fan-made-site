@@ -9,4 +9,5 @@ export interface ImageElementProps
   imageAlt: string;
   imageWidth?: number;
   imageHeight?: number;
+  imageClass?: string;
 }
